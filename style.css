@@ -8,9 +8,7 @@ html {
 #image, #video {
   width: 100%;
   height: 100%;       /* limits height on large screens */
-  height: auto;            /* keeps original aspect ratio */
-  display: block;
-  object-fit: cover;       /* fills width while cropping if needed */
+  border: none;
 }
 
 /* Row clearfix */
