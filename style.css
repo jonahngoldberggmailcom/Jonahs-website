@@ -3,66 +3,84 @@ html {
   scroll-behavior: smooth;
 }
 
-/* ---------------- NAVBAR / TOP IMAGE ---------------- */
+/* Make sure sections don’t hide behind sticky navbar */
+section, .page-header {
+  scroll-margin-top: 80px;
+}
+
+/* Navbar styling override */
+.navbar-inverse {
+  background-color: #222;
+  border: none;
+}
+
+/* Make navbar brand look better */
+.navbar-brand {
+  font-weight: bold;
+  color: white !important;
+}
+
+/* Center main image section */
+#home {
+  text-align: center;
+  padding: 20px;
+}
 
 #image img {
   width: 100%;
-  height: auto;
-  display: block;
+  max-height: 500px;
+  object-fit: cover;
 }
 
-/* ---------------- CONTAINER LAYOUT ---------------- */
-
+/* Container spacing */
 .container {
   margin-top: 20px;
 }
 
-/* ---------------- EDUCATIONAL LIFE BOXES ---------------- */
-
-.travel_mainDiv {
-  float: left;
-  width: 48%;
-  margin: 1%;
-  padding: 10px;
-  border: 1px solid #c7c7c7;
-  background-color: #fff;
+/* Section headers */
+.page-header h2 {
+  font-weight: bold;
 }
 
-/* images inside boxes */
+/* Each card (your travel_mainDiv blocks) */
+.travel_mainDiv {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 48%;
+  float: left;
+  margin-right: 2%;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Image styling */
 .travel_mainDiv img {
   width: 100%;
-  height: 300px;
+  height: 250px;
   object-fit: cover;
 }
 
-/* text spacing */
-.travel_mainDiv h5,
-.travel_mainDiv p {
-  margin-left: 10px;
-}
-
-/* clear float fix */
+/* Clear floats after rows */
 .row::after {
   content: "";
-  clear: both;
   display: table;
+  clear: both;
 }
 
-/* ---------------- HEADINGS ---------------- */
-
-.page-header {
-  margin-top: 40px;
+/* Text styling */
+.text-muted {
+  color: #777;
 }
 
-/* ---------------- OPTIONAL ICON STYLING ---------------- */
+/* Responsive fix for mobile */
+@media (max-width: 768px) {
+  .travel_mainDiv {
+    width: 100%;
+    margin-right: 0;
+  }
 
-.movie_head i {
-  float: right;
-}
-
-/* ---------------- FOOTER ---------------- */
-
-#footer {
-  height: 20px;
-  background-color: white;
+  #image img {
+    height: auto;
+  }
 }
