@@ -1,124 +1,68 @@
-/* === General === */
+/* Smooth scrolling for navbar links */
 html {
   scroll-behavior: smooth;
-  margin: 0;
-  padding: 0;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-}
-
-/* === Navbar === */
-.navbar-inverse {
-  position: sticky;
-  top: 0;
-  z-index: 99999;
-}
-
-/* === Home Image (Full Width Hero) === */
-#home {
-  margin: 0;
-  padding: 0;
-}
+/* ---------------- NAVBAR / TOP IMAGE ---------------- */
 
 #image img {
-  width: 100vw;   /* full viewport width */
-  height: auto;   /* keep aspect ratio */
-  display: block; /* remove inline gap below image */
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-/* === Containers for Sections === */
+/* ---------------- CONTAINER LAYOUT ---------------- */
+
 .container {
-  width: 95%;
-  max-width: 1200px;
-  margin: 20px auto;
+  margin-top: 20px;
 }
 
-/* === Educational Life & Home Life === */
+/* ---------------- EDUCATIONAL LIFE BOXES ---------------- */
+
 .travel_mainDiv {
   float: left;
-  width: 33.33%;
-  padding: 5px;
+  width: 48%;
+  margin: 1%;
+  padding: 10px;
   border: 1px solid #c7c7c7;
-  box-sizing: border-box;
-  margin-bottom: 20px;
+  background-color: #fff;
 }
 
+/* images inside boxes */
 .travel_mainDiv img {
   width: 100%;
   height: 300px;
   object-fit: cover;
 }
 
-.travel_mainDiv hr {
-  width: 100%;
-}
-
+/* text spacing */
 .travel_mainDiv h5,
 .travel_mainDiv p {
   margin-left: 10px;
 }
 
-/* Clearfix */
+/* clear float fix */
 .row::after {
   content: "";
-  display: table;
   clear: both;
+  display: table;
 }
 
-/* === Achievements Styling (if added later) === */
-.movie_head {
-  font-size: 20px;
-  padding: 6px 22px;
-  border-radius: 10px;
-  margin-bottom: 15px;
-  width: 100%;
-  display: inline-block;
-  background-color: #337ab7;
-  color: white;
-  cursor: pointer;
+/* ---------------- HEADINGS ---------------- */
+
+.page-header {
+  margin-top: 40px;
 }
+
+/* ---------------- OPTIONAL ICON STYLING ---------------- */
 
 .movie_head i {
   float: right;
 }
 
-.movie_text span {
-  color: #ff7700;
-}
+/* ---------------- FOOTER ---------------- */
 
-/* === Footer === */
 #footer {
   height: 20px;
   background-color: white;
-}
-
-/* === Optional: Inputs === */
-input {
-  background: grey;
-}
-
-/* === Contact/Map (if you add it) === */
-#map iframe {
-  width: 50%;
-  float: left;
-  padding-top: 5px;
-}
-
-.contact_1 h3 {
-  display: inline;
-}
-
-.contact_1 a {
-  text-shadow: none;
-}
-
-/* === Page Headers === */
-.page-header h2 {
-  border-bottom: 2px solid #337ab7;
-  padding-bottom: 5px;
-  margin-top: 40px;
 }
