@@ -7,7 +7,7 @@ html {
 /* Top image/video */
 #image, #video {
   width: 100%;
-  max-height: 500px;       /* limits height on large screens */
+  height: 100%;       /* limits height on large screens */
   height: auto;            /* keeps original aspect ratio */
   display: block;
   object-fit: cover;       /* fills width while cropping if needed */
