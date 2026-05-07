@@ -1,0 +1,68 @@
+/* Smooth scrolling for navbar links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ---------------- NAVBAR / TOP IMAGE ---------------- */
+
+#image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ---------------- CONTAINER LAYOUT ---------------- */
+
+.container {
+  margin-top: 20px;
+}
+
+/* ---------------- EDUCATIONAL LIFE BOXES ---------------- */
+
+.travel_mainDiv {
+  float: left;
+  width: 48%;
+  margin: 1%;
+  padding: 10px;
+  border: 1px solid #c7c7c7;
+  background-color: #fff;
+}
+
+/* images inside boxes */
+.travel_mainDiv img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* text spacing */
+.travel_mainDiv h5,
+.travel_mainDiv p {
+  margin-left: 10px;
+}
+
+/* clear float fix */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* ---------------- HEADINGS ---------------- */
+
+.page-header {
+  margin-top: 40px;
+}
+
+/* ---------------- OPTIONAL ICON STYLING ---------------- */
+
+.movie_head i {
+  float: right;
+}
+
+/* ---------------- FOOTER ---------------- */
+
+#footer {
+  height: 20px;
+  background-color: white;
+}
